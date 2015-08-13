@@ -1,0 +1,19 @@
+[user]
+    name = Øystein Hiåsen
+    email = oystein.hiaasen@gmail.com
+[push]
+    default = nothing
+[credential]
+    helper = cache # cache credentials
+[core]
+    editor = vim
+[alias]
+    last = log -1 HEAD
+    unstage = reset HEAD --
+    st = status
+    s = status
+    b = branch -vv
+    ba = branch -avv
+    d = diff
+    ds = diff --staged
+    dc = diff --cached
