@@ -9,7 +9,6 @@ call vundle#begin()
     Plugin 'gmarik/Vundle.vim'
     Plugin 'scrooloose/nerdtree'
     Plugin 'kien/ctrlp.vim'
-    Plugin 'altercation/vim-colors-solarized'
     Plugin 'JuliaLang/julia-vim'
     Plugin 'justinmk/vim-syntax-extra'
 call vundle#end()
@@ -17,8 +16,7 @@ call vundle#end()
 filetype plugin indent on
 
 syntax on
-set background=dark
-colorscheme solarized
+colorscheme darkblue
 
 map <C-n> :NERDTreeToggle<CR>
 nnoremap th :tabprev<CR>
