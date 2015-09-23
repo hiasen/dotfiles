@@ -106,6 +106,9 @@ bindsym XF86AudioLowerVolume exec "amixer -c 0 set Master 5%-"
 bindsym XF86AudioRaiseVolume exec "amixer -c 0 set Master 5%+"
 bindsym XF86AudioMute exec "amixer set Master toggle"
 
+bindsym $mod+F10 exec "amixer set Master toggle"
+bindsym $mod+F11 exec "amixer -c 0 set Master 5%-"
+bindsym $mod+F12 exec "amixer -c 0 set Master 5%+ && amixer set Headphone on && amixer set Master on"
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
