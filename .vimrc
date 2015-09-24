@@ -37,7 +37,12 @@ set scrolloff=3     " Min. screen lines above/below cursor
 set sidescrolloff=1 " Min. screen columns left/right of the cursor
 
 set list
-set listchars=extends:>,precedes:<,trail:·,tab:>-
+set listchars=
+set listchars+=trail:·      " Trailing spaces, i.e. spaces at the end of a line
+set listchars+=tab:>-       " Tab characters
+" Indicate that there is more of a line than what is visible
+set listchars+=extends:>
+set listchars+=precedes:<
 
 set ignorecase      " Ignore cases when searching
 set hlsearch        " Highlight searches
