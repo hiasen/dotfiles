@@ -1,29 +1,8 @@
 set nocompatible
 
-
-" Vim-plugins from vundle
-filetype off
-
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-    Plugin 'gmarik/Vundle.vim'
-    Plugin 'scrooloose/nerdtree'
-    Plugin 'kien/ctrlp.vim'
-    Plugin 'JuliaLang/julia-vim'
-    Plugin 'justinmk/vim-syntax-extra'
-call vundle#end()
-
 filetype plugin indent on
-
 syntax on
 colorscheme darkblue
-
-map <C-n> :NERDTreeToggle<CR>
-nnoremap th :tabprev<CR>
-nnoremap tl :tabnext<CR>
-nnoremap tt :tabedit<Space>
-nnoremap tn :tabnew<CR>
-nnoremap td :tabclose<CR>
 
 set nowrap
 set number
@@ -69,4 +48,12 @@ set statusline+=%m
 set statusline+=%r
 set statusline+=%q
 set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
+
+" Shortcuts
+map <C-n> :NERDTreeToggle<CR>
+nnoremap th :tabprev<CR>
+nnoremap tl :tabnext<CR>
+nnoremap tt :tabedit<Space>
+nnoremap tn :tabnew<CR>
+nnoremap td :tabclose<CR>
 
