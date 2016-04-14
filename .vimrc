@@ -2,7 +2,7 @@ set nocompatible
 
 filetype plugin indent on
 syntax on
-colorscheme darkblue
+colorscheme elflord
 
 set nowrap
 set number
