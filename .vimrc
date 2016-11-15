@@ -15,7 +15,7 @@ set hidden
 set scrolloff=3     " Min. screen lines above/below cursor
 set sidescrolloff=1 " Min. screen columns left/right of the cursor
 
-set list
+set nolist
 set listchars=
 set listchars+=trail:·      " Trailing spaces, i.e. spaces at the end of a line
 set listchars+=tab:>-       " Tab characters
@@ -29,9 +29,10 @@ set nowrapscan      " Do not wrap the search
 set incsearch       " Show results while searching
 
 " Tabs and indenting
+set tabstop=4       " Tabs are 4 characters long
 set shiftwidth=4    " Indenting is 4 spaces
 set softtabstop=-1  " When pressing tab use shiftwidth amount of spaces
-set expandtab       " Always insert space characters (no tabs)
+set noexpandtab     " Don't use spaces as tabs
 set autoindent      " automatically indent next line the same as the previous
 
 " Tab completion in command-line
