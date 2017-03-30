@@ -101,8 +101,10 @@ bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
 
 # move focused workspace to RandR-output
-bindsym $mod+n move workspace to output left
-bindsym $mod+m move workspace to output right
+bindsym $mod+Ctrl+Left move workspace to output left
+bindsym $mod+Ctrl+Right move workspace to output right
+bindsym $mod+Ctrl+Up move workspace to output up
+bindsym $mod+Ctrl+Down move workspace to output down
 
 bindsym XF86AudioLowerVolume exec "amixer -c 0 set Master 5%-"
 bindsym XF86AudioRaiseVolume exec "amixer -c 0 set Master 5%+"
